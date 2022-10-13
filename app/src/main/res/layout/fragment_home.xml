@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="-100dp"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#fafcf9" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-80dp"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeIvMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_round_menu_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_round_notifications_none_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/homeTvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="12 de Outubro"
+        android:textColor="#2E2E2E"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/homeIvMenu"
+        app:layout_constraintTop_toBottomOf="@id/homeIvMenu" />
+
+    <TextView
+        android:id="@+id/homeTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Olá Mamãe,\nVocê está indo\ntão bem!"
+        android:textColor="#2E2E2E"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/homeIvMenu"
+        app:layout_constraintTop_toBottomOf="@id/homeTvDate" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/homeTvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/homeTvTitle"
+        app:riv_oval="true"
+        android:src="@drawable/ic_launcher_background"
+        tools:src="@tools:sample/avatars" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homeCardCalories"
+        android:layout_marginTop="36dp"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeTvTitle" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homeCardWater"
+        android:layout_marginTop="36dp"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeTvTitle" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homeCardSleep"
+        android:layout_marginTop="20dp"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeCardCalories" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homeCardWalk"
+        android:layout_marginTop="20dp"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/beige"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeCardCalories" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/pink"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="@id/homeCardWalk"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@id/homeCardSleep"
+        app:layout_constraintTop_toBottomOf="@id/homeCardSleep" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

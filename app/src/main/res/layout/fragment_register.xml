@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/signupTvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+
+            android:fontFamily="@font/roboto_medium"
+            android:text="Crie uma conta!"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+
+        <TextView
+            android:id="@+id/signupTvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Crie uma conta aqui, preenchendo os campos com seus dados!"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_bg"
+            android:elevation="2dp"
+            android:fontFamily="@font/roboto"
+            android:hint="Digite seu nome"
+            android:paddingVertical="18dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="8dp" />
+
+        <EditText
+            android:id="@+id/registerEtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_bg"
+            android:elevation="2dp"
+            android:fontFamily="@font/roboto"
+            android:hint="Digite seu email"
+            android:paddingVertical="18dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="8dp" />
+
+
+        <EditText
+            android:id="@+id/registerEtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textPassword"
+            android:elevation="2dp"
+            android:fontFamily="@font/roboto"
+            android:hint="Digite sua senha"
+            android:paddingVertical="18dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="8dp" />
+
+
+
+        <EditText
+            android:id="@+id/registerEtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textPassword"
+            android:elevation="2dp"
+            android:fontFamily="@font/roboto"
+            android:hint="Confirme sua senha"
+            android:paddingVertical="18dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="8dp" />
+
+
+        <TextView
+            android:id="@+id/registerTvRecovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Recuperar senha"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/registerBtnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            app:backgroundTint="@color/orange"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingVertical="10dp"
+            android:text="Próximo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/registerTvEnterWith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto"
+            android:text="Ou entre com"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

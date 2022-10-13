@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "473979960742",
+    "project_id": "nutriapp-34243",
+    "storage_bucket": "nutriapp-34243.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473979960742:android:bc1095d457811189812367",
+        "android_client_info": {
+          "package_name": "com.arthurlunardi.nutriapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473979960742-lcps8pbs0utuuj3tot9j84sg8prut63q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4LCLE3Hx6GgM53sHBhZbRP69AveMavE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473979960742-lcps8pbs0utuuj3tot9j84sg8prut63q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
